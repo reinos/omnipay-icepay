@@ -1,11 +1,11 @@
 <?php
 
-namespace Omnipay\Sisow;
+namespace Omnipay\Icepay;
 
 use Omnipay\Common\AbstractGateway;
 
 /**
- * Sisow gateway.
+ * Icepay gateway.
  */
 class Gateway extends AbstractGateway
 {
@@ -14,7 +14,7 @@ class Gateway extends AbstractGateway
      */
     public function getName()
     {
-        return 'Sisow';
+        return 'Icepay';
     }
 
     /**

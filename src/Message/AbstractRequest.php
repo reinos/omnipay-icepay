@@ -1,11 +1,11 @@
 <?php
 
-namespace Omnipay\Sisow\Message;
+namespace Omnipay\Icepay\Message;
 
 use \Omnipay\Common\Message\AbstractRequest as BaseAbstractRequest;
 
 /**
- * Sisow Abstract Request
+ * Icepay Abstract Request
  */
 abstract class AbstractRequest extends BaseAbstractRequest
 {

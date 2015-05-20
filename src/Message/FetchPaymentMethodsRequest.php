@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Sisow\Message;
+namespace Omnipay\Icepay\Message;
 
 class FetchPaymentMethodsRequest extends AbstractRequest
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Sisow\Message;
+namespace Omnipay\Icepay\Message;
 
 use Omnipay\Common\Message\AbstractResponse as BaseAbstractResponse;
 use Omnipay\Common\Message\FetchIssuersResponseInterface;

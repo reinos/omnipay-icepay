@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Sisow;
+namespace Omnipay\Icepay;
 
 use Omnipay\Tests\GatewayTestCase;
 
@@ -23,16 +23,16 @@ class IdealGatewayTest extends GatewayTestCase
 
     public function testFetchIssuers()
     {
-        /** @var \Omnipay\Sisow\Message\FetchIssuersRequest $request */
+        /** @var \Omnipay\Icepay\Message\FetchIssuersRequest $request */
         $request = $this->gateway->fetchIssuers();
 
-        $this->assertInstanceOf('Omnipay\Sisow\Message\FetchIssuersRequest', $request);
+        $this->assertInstanceOf('Omnipay\Icepay\Message\FetchIssuersRequest', $request);
         $this->assertNull($request->getData());
     }
 
     public function testPurchase()
     {
-        /** @var \Omnipay\Sisow\Message\PurchaseRequest $request */
+        /** @var \Omnipay\Icepay\Message\PurchaseRequest $request */
         $request = $this->gateway->purchase(array(
             'issuer' => '01',
             'amount' => '100.00',
@@ -43,7 +43,7 @@ class IdealGatewayTest extends GatewayTestCase
             'notifyUrl' => 'http://localhost/notify',
         ));
 
-        $this->assertInstanceOf('Omnipay\Sisow\Message\PurchaseRequest', $request);
+        $this->assertInstanceOf('Omnipay\Icepay\Message\PurchaseRequest', $request);
         $this->assertSame('01', $request->getIssuer());
         $this->assertSame('100.00', $request->getAmount());
         $this->assertSame('desc', $request->getDescription());
@@ -53,12 +53,12 @@ class IdealGatewayTest extends GatewayTestCase
 
     public function testCompletePurchase()
     {
-        /** @var \Omnipay\Sisow\Message\CompletePurchaseRequest $request */
+        /** @var \Omnipay\Icepay\Message\CompletePurchaseRequest $request */
         $request = $this->gateway->completePurchase(array(
             'transactionId' => '123456',
         ));
 
-        $this->assertInstanceOf('Omnipay\Sisow\Message\CompletePurchaseRequest', $request);
+        $this->assertInstanceOf('Omnipay\Icepay\Message\CompletePurchaseRequest', $request);
         $this->assertSame('123456', $request->getTransactionId());
     }
 }

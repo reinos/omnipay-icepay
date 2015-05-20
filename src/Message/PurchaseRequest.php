@@ -1,11 +1,11 @@
 <?php
 
-namespace Omnipay\Sisow\Message;
+namespace Omnipay\Icepay\Message;
 
 use Omnipay\Common\Exception\InvalidRequestException;
 
 /**
- * Sisow Purchase Request
+ * Icepay Purchase Request
  */
 class PurchaseRequest extends AbstractRequest
 {

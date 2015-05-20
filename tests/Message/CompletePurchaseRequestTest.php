@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Sisow\Message;
+namespace Omnipay\Icepay\Message;
 
 use Mockery as m;
 use Omnipay\Tests\TestCase;
@@ -13,7 +13,7 @@ class CompletePurchaseRequestTest extends TestCase
         $request->query->set('trxid', '1234');
 
         $arguments = array($this->getHttpClient(), $request);
-        $this->request = m::mock('Omnipay\Sisow\Message\CompletePurchaseRequest[getEndpoint]', $arguments);
+        $this->request = m::mock('Omnipay\Icepay\Message\CompletePurchaseRequest[getEndpoint]', $arguments);
         $this->request->setShopId('0');
         $this->request->setMerchantId('0123456');
         $this->request->setMerchantKey('b36d8259346eaddb3c03236b37ad3a1d7a67cec6');

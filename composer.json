@@ -1,27 +1,27 @@
 {
-    "name": "fruitcakestudio/omnipay-sisow",
-    "description": "Sisow gateway for the Omnipay payment processing library",
+    "name": "reinos/omnipay-icepay",
+    "description": "Icepay gateway for the Omnipay payment processing library",
     "keywords": [
         "gateway",
         "merchant",
         "omnipay",
         "pay",
         "payment",
-        "sisow"
+        "icepay"
     ],
     "license": "MIT",
     "authors": [
         {
-            "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
+            "name": "Rein de Vries",
+            "email": "info@reinos.nl"
         },
         {
-            "name": "Fruitcake Studio",
-            "homepage": "http://fruitcakestudio.nl"
+            "name": "Reinos.nl",
+            "homepage": "http://reinos.nl"
         }
     ],
     "autoload": {
-        "psr-4": { "Omnipay\\Sisow\\" : "src/" }
+        "psr-4": { "Omnipay\\Icepay\\" : "src/" }
     },
     "require": {
         "omnipay/common": "~2.2"
